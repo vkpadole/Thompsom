@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Thompsom Software.
+ *
+ * @category  Thompsom
+ * @package   Thompsom_CustomerImport
+ * @author    Thompsom
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="csv_import_command" xsi:type="object">Thompsom\CustomerImport\Console\Command\CustomerImportCsv</item>
+                <item name="json_import_command" xsi:type="object">Thompsom\CustomerImport\Console\Command\CustomerImportJson</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
+
